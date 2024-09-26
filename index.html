@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.6/jquery.easypiechart.min.js" integrity="sha512-DHNepbIus9t4e6YoMBSJLwl+nnm0tIwMBonsQQ+W9NKN6gVVVbomJs9Ii3mQ+HzGZiU5FyJLdnAz9a63ZgZvTQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilos.css">
+    <title>Porfolio</title>
+</head>
+<body>
+    <!-- Secciòn INICIO -->
+    <span class="sombra">
+        <section id="inicio" class="inicio">
+            <div class="contenido">
+                <header>
+                    <div class="logo">
+                        <i class="fa-brands fa-codepen"></i>
+                        <h1>Meyly</h1>
+                    </div>
+                    <nav id="nav" class=""">
+                        <a href="#inicio">Inicio</a>
+                        <a href="#habilidades">Habilidades</a>
+                        <a href="#educacion">Educación</a>
+                        <a href="#experiencias">Experiencia</a>
+                        <a href="#contacto">Contacto</a>
+                    </nav>
+    
+                    <!-- Icono del menu responsive -->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+    
+                    <div class="redes">
+                        <a href="https://www.linkedin.com/in/meyly-merma/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Meyly-SK"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </header>
+    
+                <div class="fila">
+                    <div class="col">
+                        <h2>Desarrollador Fullstack</h2>
+                        <p> Aspirante a Desarrollador de Software con habilidades en C# y Java, enfocado en la eficiencia y la
+                            atención al detalle. Busco oportunidades para aprender, crecer y contribuir con mi pasión por la
+                            tecnología y la resolución de problemas.</p>
+                            <button class="btn btn-1" onclick="downloadCV()">Descargar CV</button>
+                    </div>
+                    <div class="col">
+                        <div class="contenedor-img">
+                            <img src="img/foto-inicio.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </span>
+
+    
+
+    <!-- sección habilidades -->
+    <!--  <section class="habilidades" id="habilidades">
+        <div class="contenedor-habi">
+            <h2>Habilidades</h2>
+            <div class="fila">
+                <div class="col">
+                    <div class="score">
+                        <div class="box">
+                            <div class="chart" data-percent="95">
+                                95%
+                            </div>
+                            <h2>HTML & CSS</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="score">
+                        <div class="box">
+                            <div class="chart" data-percent="90">
+                                90%
+                            </div>
+                            <h2>BOOSTRAP</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="score">
+                        <div class="box">
+                            <div class="chart" data-percent="85">
+                                85%
+                            </div>
+                            <h2>JAVASCRIPT</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="col">
+                    <div class="score">
+                        <div class="box">
+                            <div class="chart" data-percent="70">
+                                70%
+                            </div>
+                            <h2>MYSQL</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="score">
+                        <div class="box">
+                            <div class="chart" data-percent="90">
+                                90%
+                            </div>
+                            <h2>PHP</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="score">
+                        <div class="box">
+                            <div class="chart" data-percent="90">
+                                90%
+                            </div>
+                            <h2>PHOTOSHOP</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <section id="habilidades" class="habilidades">
+        <div class="contenido">
+            <h2 class="Habi">Habilidades</h2>
+            <div class="tarjetas-contenedor">
+    
+                <!-- Tarjeta 1: Lenguajes de Programación -->
+                <div class="tarjeta">
+                    <h3>Lenguajes de Programación</h3>
+                    <div class="contenido-tarjeta">
+                        <img src="habilidades/java.png" alt="Java" width="50" height="50">
+                        <img src="habilidades/c-sharp.png" alt="C#" width="50" height="50">
+                        <img src="habilidades/Kotlin.png" alt="Kotlin" width="50" height="50">
+                        <img src="habilidades/swift.png" alt="Swift" width="50" height="50">
+                        <img src="habilidades/php.png" alt="PHP" width="50" height="50">
+                    </div>
+                </div>
+    
+                <!-- Tarjeta 2: Desarrollo Web -->
+                <div class="tarjeta">
+                    <h3>Desarrollo Web</h3>
+                    <div class="contenido-tarjeta">
+                        <img src="habilidades/html-5.png" alt="html" width="50" height="50">
+                        <img src="habilidades/css.png" alt="css" width="50" height="50">
+                        <img src="habilidades/js.png" alt="js" width="50" height="50">
+                        <img src="habilidades/bootstrap.png" alt="Boostrap" width="50" height="50">
+                        <img src="habilidades/react.png" alt="React" width="50" height="50">
+                        <img src="habilidades/angular.png" alt="Angular" width="50" height="50">
+                    </div>
+                </div>
+    
+                <!-- Tarjeta 3: Bases de Datos -->
+                <div class="tarjeta">
+                    <h3>Bases de Datos</h3>
+                    <div class="contenido-tarjeta">
+                        <img src="habilidades/MySQL.png" alt="MYSQL" width="50" height="50">
+                        <img src="habilidades/Microsoft_SQL_Server.png" alt="SQLSERVER" width="50" height="50">
+                        <img src="habilidades/MongoDB.png" alt="MONGODB" width="50" height="50">
+                    </div>
+                </div>
+    
+                <!-- Tarjeta 4: Herramientas y Tecnologías Adicionales -->
+                <div class="tarjeta">
+                    <h3>Herramientas y Tecnologías Adicionales</h3>
+                    <div class="contenido-tarjeta">
+                        <img src="habilidades/Git.png" alt="git" width="50" height="50">
+                        <img src="habilidades/Nodejs.png" alt="nodejs" width="50" height="50">
+                        <img src="habilidades/spring_boot.png" alt="spring_boot" width="50" height="50">
+                        <img src="habilidades/NET_core.png" alt="asp_net" width="50" height="50">
+                        <img src="habilidades/VisualStudio.png" alt="visual_studio" width="50" height="50">
+                        <img src="habilidades/api.png" alt="api_rest" width="50" height="50">
+                        <img src="habilidades/ubuntu.png" alt="ubuntu" width="50" height="50">
+                        <img src="habilidades/docker.png" alt="docker" width="50" height="50">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- sección SERVICIOS -->
+    <section id="educacion" class="educacion">
+        <div class="contenido">
+            <h2>Educación</h2>
+            <div class="institucion">
+                <div class="imagen-institucion">
+                    <img src="logo/logo_cibertec_fondo_blanco.jpg" alt="Cibertec" width="100" height="100">
+                </div>
+                <div class="detalles-institucion">
+                    <h3>Cibertec</h3>
+                    <p><strong>Título:</strong> Técnico en Computación e Informática</p>
+                    <p><strong>Fecha de Asistencia:</strong> 2021 - 2023</p>
+                    <p><strong>Ubicación:</strong> Arequipa</p>
+                </div>
+            </div>
+    
+            <div class="proyectos-personales">
+                <h3>Proyectos Personales</h3>
+                <div class="tarjetas-proyectos">
+                    
+                    <!-- Tarjeta Proyecto 1 -->
+                    <div class="tarjeta-proyecto">
+                        <h4> Aplicación de Comercio Electrónico</h4>
+                        <div class="imagen-proyecto">
+                            <img src="logo/Web.jpg" alt="Tienda de Ropa" width="100%" height="150px">
+                        </div>
+                        <p>Desarrollo de una plataforma de comercio electrónico
+                            enfocada en moda. Con una navegación intuitiva y segura con gestión eficiente de cuentas de clientes.</p>
+                        <div class="tecnologias">
+                            <img src="habilidades/spring_boot.png" alt="Node.js" width="30" height="30">
+                            <img src="habilidades/MySQL.png" alt="MySQL" width="30" height="30">
+                            <img src="habilidades/html-5.png" alt="html" width="30" height="30">
+                            <img src="habilidades/css.png" alt="css" width="30" height="30">
+                            <img src="habilidades/js.png" alt="js" width="30" height="30">
+                            <img src="habilidades//bootstrap.png" alt="bootstrap" width="30" height="30">
+                        </div>
+                        <div class="github-link">
+                            <a href="https://github.com/QA-Erick/E-commerce_ropa" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+    
+                    <!-- Tarjeta Proyecto 2 -->
+                    <div class="tarjeta-proyecto">
+                        <h4>Galeria para celular</h4>
+                        <div class="imagen-proyecto">
+                            <img src="logo/Aplicaciones-de-galerias-de-fotos.jpg" alt="Galeria" width="100%" height="150px">
+                        </div>
+                        <p>Aplicación móvil hecha con React Native que permite registrarse, ver y tomar fotografias</p>
+                        <div class="tecnologias">
+                            <img src="habilidades/react.png" alt="React" width="30" height="30">
+                            <img src="habilidades/css.png" alt="Css" width="30" height="30">
+                            <img src="habilidades/js.png" alt="js" width="30" height="30">
+                            <img src="habilidades/api.png" alt="js" width="30" height="30">
+                        </div>
+                        <div class="github-link">
+                            <a href="https://github.com/Meyly-SK/ReactApp/tree/master" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+    
+                    <!-- Tarjeta Proyecto 3 -->
+                    <div class="tarjeta-proyecto">
+                        <h4>Sistema de Gestión de Clínica</h4>
+                        <div class="imagen-proyecto">
+                            <img src="logo/Tecnology.jpg" alt=" Sistema de Gestión de Clínica Web" width="100%" height="150px">
+                        </div>
+                        <p>Creacion de una aplicación web en Java para la administración 
+                            de clínicas. Usé Bootstrap y una API 
+                            REST para una interfaz atractiva y una gestión 
+                            eficiente</p>
+                        <div class="tecnologias">
+                            <img src="habilidades/spring_boot.png" alt="Node.js" width="30" height="30">
+                            <img src="habilidades/MySQL.png" alt="MySQL" width="30" height="30">
+                            <img src="habilidades/html-5.png" alt="html" width="30" height="30">
+                            <img src="habilidades/css.png" alt="css" width="30" height="30">
+                            <img src="habilidades/js.png" alt="js" width="30" height="30">
+                            <img src="habilidades/bootstrap.png" alt="bootstrap" width="30" height="30">
+                            <img src="habilidades/api.png" alt="bootstrap" width="30" height="30">
+                        </div>
+                        <div class="github-link">
+                            <a href="https://github.com/Meyly-SK/ApiClinica" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>                                          
+                        </div>
+                        <div class="github-link">
+                            <a href="https://github.com/QA-Erick/CentroMedico" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>                                          
+                        </div>           
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- sección trabajos -->
+    <section id="experiencias" class="experiencias">
+        <div class="contenido">
+            <h2>Experiencia Laboral</h2>
+    
+            <!-- Tarjeta de Microdata -->
+            <div class="tarjeta-experiencia">
+                <div class="tarjeta-header">
+                    <h3>Desarrollador de Software | <span class="empresa">Microdata</span></h3>
+                    <p><strong>Fecha:</strong> Abril 2024 - Julio 2024</p>
+                </div>
+                <div class="tarjeta-body">
+                    <ul>
+                        <li>Desarrollé una aplicación móvil en Kotlin para una clínica odontológica, mejorando la accesibilidad para personas sordas.</li>
+                        <li>Optimizé una plataforma web para una empresa portuaria utilizando Node.js, Angular y AWS, mejorando la eficiencia y escalabilidad.</li>
+                        <li>Colaboré con equipos multidisciplinarios para asegurar la integración fluida entre frontend y backend.</li>
+                    </ul>
+                </div>
+            </div>
+    
+            <!-- Tarjeta de Sosnet -->
+            <div class="tarjeta-experiencia">
+                <div class="tarjeta-header">
+                    <h3>Analista y Desarrollador de Software | <span class="empresa">Sosnet</span></h3>
+                    <p><strong>Fecha:</strong> Septiembre 2023 - Noviembre 2023</p>
+                </div>
+                <div class="tarjeta-body">
+                    <ul>
+                        <li>Modernicé aplicaciones de escritorio migrándolas a plataformas web utilizando Java con Spring Boot y C# con .NET para clínicas.</li>
+                        <li>Optimizé flujos de trabajo médicos integrando nuevas tecnologías y mejores prácticas de desarrollo.</li>
+                        <li>Contribuí al diseño e implementación de interfaces y backend, mejorando la accesibilidad y experiencia del usuario final.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- sección contacto -->
+    <section class="contacto" id="contacto">
+        <div class="contenedor-contacto">
+            <h2>Contacto</h2>
+            <div class="fila">
+                <div class="col">
+                    <div class="info">
+                        <h3>Email:</h3>
+                        <p>meylymerma03@gmail.com</p>
+                    </div>
+                    <div class="info">
+                        <h3>Teléfono:</h3>
+                        <p>+51 910881517</p>
+                    </div>
+                    <div class="info">
+                        <h3>País</h3>
+                        <p>Perú</p>
+                    </div>
+                    <div class="info">
+                        <h3>Ciudad:</h3>
+                        <p>Arequipa</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Portafolio 2024-09</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

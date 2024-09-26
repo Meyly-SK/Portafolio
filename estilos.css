@@ -1,0 +1,521 @@
+/* importamos la fuente */
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'M PLUS Rounded 1c';
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #f6fafc;
+}
+
+/* SECCION I N I C I O */
+.inicio{
+    background:linear-gradient(to right, #000c67, #007be5);
+    clip-path: polygon(0 0, 100% 0, 100% 46%, 47% 84%, 0 45%);
+    height: 90vh;
+    padding:  0 20px;
+}
+.inicio .contenido{
+    max-width: 1100px;
+    margin: auto;
+    color: #fff;
+}
+.inicio header{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+    align-items: center;
+}
+.inicio .logo{
+    display: flex;
+    align-items: center;
+    color: #00deef;
+    font-size: 25px;
+}
+.inicio .logo i{
+    display: inline-block;
+    margin-right: 20px;
+}
+#inicio header nav a{
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    border: 2px solid transparent;
+}
+#inicio header nav a:hover{
+    border-bottom: 2px solid #ff5b00;
+}
+.inicio .redes a{
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    margin: 0 10px;
+}
+.inicio .redes a:hover{
+    color: #ff5b00;
+}
+.inicio .fila{
+    display: flex;
+    margin-top: 50px;
+    padding-bottom: 100px;
+}
+.inicio .fila .col{
+    width: 50%;
+}
+.inicio .fila .col h2{
+    margin-bottom: 15px;
+    font-size: 40px;
+}
+.inicio .fila .col p{
+    margin-bottom: 20px;
+}
+
+.inicio .fila .col .contenedor-img{
+    max-width: 400px;
+    margin: auto;
+}
+.inicio .fila .col .contenedor-img img{
+    width: 100%;
+}
+.inicio .fila .col button{
+    background: none;
+    width: fit-content;
+    padding: 5px 40px;
+    border: 2px solid #ff5b00;
+    color: #fff;
+    background:linear-gradient(to right, #ff5b00, #ff9900);
+    transition: .5s;
+    cursor: pointer;
+}
+.inicio .fila .col button:hover{
+    transform: scale(1.1);
+}
+#icono-nav{
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    transition: .3s;
+    cursor: pointer;
+    display: none;
+}
+#icono-nav:hover{
+    background-color: #3e3e3e;
+}
+.sombra{
+    filter:drop-shadow(0em 30px 20px #9bd2f4);
+}
+/* SECCION S E R V I C I O S */
+.educacion {
+    border-radius: 15px;
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+.contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.institucion {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.imagen-institucion img {
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.detalles-institucion {
+    text-align: left;
+}
+
+.proyectos-personales {
+    margin-top: 40px;
+    width: 100%;
+}
+
+.tarjetas-proyectos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.tarjeta-proyecto {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 32%;
+}
+
+.tarjeta-proyecto h4 {
+    margin-bottom: 10px;
+}
+
+.tarjeta-proyecto .imagen-proyecto {
+    margin-bottom: 15px;
+}
+
+.tarjeta-proyecto p {
+    margin-bottom: 10px;
+}
+
+.tarjeta-proyecto .tecnologias {
+    margin-bottom: 10px;
+}
+
+.tarjeta-proyecto .tecnologias img {
+    margin: 0 5px;
+}
+
+.github-link a {
+    color: #000;
+    font-size: 24px;
+}
+
+.github-link a:hover {
+    color: #007BFF;
+}
+
+
+
+
+
+
+/* seccion HABILIDADES */
+.habilidades{
+    background:linear-gradient(to right, #000c76, #007be5);
+    color: #fff;
+    padding: 60px 0;
+    position: relative;
+    top: -100px;
+}
+.habilidades h2{
+    text-align: center;
+}
+.habilidades .contenedor-habi{
+    max-width: 1100px;
+    margin: auto;
+}
+.habilidades .fila{
+    display: flex;
+    justify-content: space-around;
+}
+.score{
+    padding: 10px;
+    margin: auto 0;
+}
+.score .box{
+    width: 100%;
+}
+.score .box h2{
+    display: block;
+    text-align: center;
+}
+.score .box .chart{
+    position: relative;
+    width: 160px;
+    height: 160px;
+    margin: auto;
+    line-height: 160px;
+    font-size: 40px;
+    text-align: center;
+}
+
+/*NUEVO
+
+/* Estilos para la sección de habilidades */
+.habilidades .Habi {
+    text-align: center;
+    font-size: 2.5em;
+    margin-top: 20px;
+}
+
+/* Contenedor de las tarjetas */
+.habilidades .tarjetas-contenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 tarjetas por fila */
+    gap: 30px;
+    margin: 40px auto;
+    padding: 0 20px;
+    max-width: 1200px; /* Centramos el contenido */
+}
+
+/* Estilos de cada tarjeta */
+.habilidades .tarjeta {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative; /* Para el efecto hover */
+    overflow: hidden;
+}
+
+.habilidades .tarjeta:hover {
+    transform: translateY(-10px); /* Se eleva al hacer hover */
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+}
+
+/* Título de cada tarjeta */
+.habilidades .tarjeta h3 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+/* Contenido de la tarjeta (imágenes de tecnologías) */
+.habilidades .contenido-tarjeta img {
+    margin: 10px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.habilidades .contenido-tarjeta img:hover {
+    transform: scale(1.1); /* Efecto de zoom al hacer hover en las imágenes */
+    filter: brightness(1.2); /* Hace que se vea un poco más brillante */
+}
+
+/* Responsive para pantallas medianas */
+@media (max-width: 768px) {
+    .habilidades .tarjetas-contenedor {
+        grid-template-columns: 1fr; /* 1 tarjeta por fila */
+    }
+}
+
+
+
+/* Esta clase se genera dinámicamente por la librera para graficos */
+.score .box canvas{
+    position:absolute;
+    top: 0;
+    left: 0;
+}
+/* SECCION T R A B A J O S */
+
+.experiencias {
+    border-radius: 15px;
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 1000px;
+}
+
+.tarjeta-experiencia {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.tarjeta-experiencia:hover {
+    transform: scale(1.02);
+}
+
+.tarjeta-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.tarjeta-header h3 {
+    margin: 0;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.empresa {
+    font-weight: normal;
+    color: #555;
+}
+
+.tarjeta-body ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.tarjeta-body li {
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+@media (max-width: 768px) {
+    .tarjeta-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .tarjeta-header h3 {
+        font-size: 1.2em;
+    }
+
+    .tarjeta-body li {
+        font-size: 0.9em;
+    }
+}
+
+
+/* SECCIÓN C O N T A C T O */
+.contacto{
+    background:
+        linear-gradient(rgba(0,12,103,1), rgba(0,12,103,.8)),
+        url(img/foto-contacto.png);
+        background-size: cover;
+        color: #fff;
+        margin-top: 100px;
+        padding: 80px 20px;
+}
+.contacto .contenedor-contacto{
+    max-width: 1100px;
+    margin: auto;
+}
+.contacto h2{
+    text-align: center;
+    padding-bottom: 30px;
+}
+.contacto .contenedor-contacto .fila{
+    display: flex;
+}
+.contacto .contenedor-contacto .fila .col{
+    width: 50%;
+}
+.contacto .contenedor-contacto .info{
+    margin-bottom: 30px;
+    border-left: 3px solid #8d8d8d;
+    padding-left: 8px;
+}
+.contacto .contenedor-contacto .info p{
+    color: #8d8d8d;
+}
+.contacto input, .contacto textarea{
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    padding: 10px;
+    border: 1px solid #8d8d8d ;
+    margin-bottom: 20px;
+    outline: none;
+    color: #ff5b00;
+}
+.contacto .btn{
+    background-color: none;
+    padding: 5px 40px;
+    border: 2px solid;
+    color: #fff;
+    cursor: pointer;
+    background: linear-gradient(to right, #ff5b00, #ff9900);
+}
+
+footer{
+    background-color: #000;
+    color: #fff;
+    padding: 7px 0;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* SECCION RESPONSIVE */
+@media screen and (max-width:1180px){
+    .inicio{
+        clip-path: none;
+    }
+}
+@media screen and (max-width:800px){
+    .redes{
+        display: none;
+    }
+    #nav{
+        display: none;
+    }
+    #nav.responsive{
+        background-color: rgba(0,0,0,.9);
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        position: absolute;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 99;
+    }
+    #nav.responsive a{
+        font-size: 30px;
+    }
+    #icono-nav{
+        display: block;
+    }
+
+    .inicio{
+        height: auto;
+    }
+    .inicio .fila{
+        display: block;
+    }
+    .inicio .fila .col{
+        width: 100%;
+        text-align: center;
+    }
+    .inicio .fila .col h2{
+        margin-top: 20px;
+    }
+    .inicio .fila .col .contenedor-img{
+        width: 50%;
+        margin-top: 30px;
+    }
+
+    .servicios{
+        position: static;
+        padding: 20px;
+    }
+    .servicios .fila{
+        display: block;
+        margin-bottom: 0;
+    }
+    .servicios .fila .col{
+        width: 70%;
+        margin: auto;
+    }
+    .servicios .fila .col .card{
+        margin-bottom: 20px;
+    }
+    .habilidades{
+        position: static;
+    }
+
+    .trabajos nav a{
+        margin: 0 5px;
+    }
+
+    .contacto .fila{
+        display:  block !important;
+    }
+    .contacto .fila .col{
+        text-align: center;
+        width: 100% !important;
+    }
+    .contacto .fila .col .info{
+        float: left;
+        font-size: 12px;
+        width: 25%;
+    }
+}
