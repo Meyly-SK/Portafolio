@@ -1,15 +1,23 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.6/jquery.easypiechart.min.js" integrity="sha512-DHNepbIus9t4e6YoMBSJLwl+nnm0tIwMBonsQQ+W9NKN6gVVVbomJs9Ii3mQ+HzGZiU5FyJLdnAz9a63ZgZvTQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.6/jquery.easypiechart.min.js"
+        integrity="sha512-DHNepbIus9t4e6YoMBSJLwl+nnm0tIwMBonsQQ+W9NKN6gVVVbomJs9Ii3mQ+HzGZiU5FyJLdnAz9a63ZgZvTQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="estilos.css">
     <title>Porfolio</title>
 </head>
+
 <body>
     <!-- Secciòn INICIO -->
     <span class="sombra">
@@ -21,31 +29,33 @@
                         <h1>Meyly</h1>
                     </div>
                     <nav id="nav" class=""">
-                        <a href="#inicio">Inicio</a>
+                        <a href=" #inicio">Inicio</a>
                         <a href="#habilidades">Habilidades</a>
                         <a href="#educacion">Educación</a>
                         <a href="#experiencias">Experiencia</a>
                         <a href="#contacto">Contacto</a>
                     </nav>
-    
+
                     <!-- Icono del menu responsive -->
                     <div id="icono-nav" onclick="responsiveMenu()">
                         <i class="fa-solid fa-bars"></i>
                     </div>
-    
+
                     <div class="redes">
                         <a href="https://www.linkedin.com/in/meyly-merma/"><i class="fa-brands fa-linkedin"></i></a>
                         <a href="https://github.com/Meyly-SK"><i class="fa-brands fa-github"></i></a>
                     </div>
                 </header>
-    
+
                 <div class="fila">
                     <div class="col">
                         <h2>Desarrollador Fullstack</h2>
-                        <p> Aspirante a Desarrollador de Software con habilidades en C# y Java, enfocado en la eficiencia y la
-                            atención al detalle. Busco oportunidades para aprender, crecer y contribuir con mi pasión por la
+                        <p> Aspirante a Desarrollador de Software con habilidades en C# y Java, enfocado en la
+                            eficiencia y la
+                            atención al detalle. Busco oportunidades para aprender, crecer y contribuir con mi pasión
+                            por la
                             tecnología y la resolución de problemas.</p>
-                            <button class="btn btn-1" onclick="downloadCV()">Descargar CV</button>
+                        <button class="btn btn-1" onclick="downloadCV()">Descargar CV</button>
                     </div>
                     <div class="col">
                         <div class="contenedor-img">
@@ -57,7 +67,7 @@
         </section>
     </span>
 
-    
+
 
     <!-- sección habilidades -->
     <!--  <section class="habilidades" id="habilidades">
@@ -134,7 +144,7 @@
         <div class="contenido">
             <h2 class="Habi">Habilidades</h2>
             <div class="tarjetas-contenedor">
-    
+
                 <!-- Tarjeta 1: Lenguajes de Programación -->
                 <div class="tarjeta">
                     <h3>Lenguajes de Programación</h3>
@@ -146,7 +156,7 @@
                         <img src="habilidades/php.png" alt="PHP" width="60" height="60">
                     </div>
                 </div>
-    
+
                 <!-- Tarjeta 2: Desarrollo Web -->
                 <div class="tarjeta">
                     <h3>Desarrollo Web</h3>
@@ -157,10 +167,10 @@
                         <img src="habilidades/bootstrap.png" alt="Boostrap" width="60" height="60">
                         <img src="habilidades/react.png" alt="React" width="60" height="60">
                         <img src="habilidades/angular.png" alt="Angular" width="60" height="60">
-                        
+
                     </div>
                 </div>
-    
+
                 <!-- Tarjeta 3: Bases de Datos -->
                 <div class="tarjeta">
                     <h3>Bases de Datos</h3>
@@ -170,7 +180,7 @@
                         <img src="habilidades/MongoDB.png" alt="MONGODB" width="60" height="60">
                     </div>
                 </div>
-    
+
                 <!-- Tarjeta 4: Herramientas y Tecnologías Adicionales -->
                 <div class="tarjeta">
                     <h3>Herramientas y Tecnologías Adicionales</h3>
@@ -204,11 +214,11 @@
                     <p><strong>Fecha de Asistencia:</strong> 2021 - 2023</p>
                     <p><strong>Ubicación:</strong> Arequipa</p>
                 </div>
-            </div>   
+            </div>
             <div class="proyectos-personales">
                 <h3>Proyectos Personales</h3>
                 <div class="tarjetas-proyectos">
-                    
+
                     <!-- Tarjeta Proyecto 1 -->
                     <div class="tarjeta-proyecto">
                         <h4> Aplicación de Comercio Electrónico</h4>
@@ -216,7 +226,8 @@
                             <img src="logo/Web.jpg" alt="Tienda de Ropa" width="100%" height="150px">
                         </div>
                         <p>Desarrollo de una plataforma de comercio electrónico
-                            enfocada en moda. Con una navegación intuitiva y segura con gestión eficiente de cuentas de clientes.</p>
+                            enfocada en moda. Con una navegación intuitiva y segura con gestión eficiente de cuentas de
+                            clientes.</p>
                         <div class="tecnologias">
                             <img src="habilidades/java.png" alt="Java" width="30" height="30">
                             <img src="habilidades/spring_boot.png" alt="Node.js" width="30" height="30">
@@ -226,19 +237,20 @@
                             <img src="habilidades/css.png" alt="css" width="30" height="30">
                             <img src="habilidades/js.png" alt="js" width="30" height="30">
                             <img src="habilidades//bootstrap.png" alt="bootstrap" width="30" height="30">
-                            
+
                         </div>
                         <div class="github-link">
                             <a href="https://github.com/QA-Erick/E-commerce_ropa" target="_blank">
                                 <i class="fab fa-github"></i>
                             </a>
                         </div>
-                    </div>   
+                    </div>
                     <!-- Tarjeta Proyecto 2 -->
                     <div class="tarjeta-proyecto">
                         <h4>Galeria para celular</h4>
                         <div class="imagen-proyecto">
-                            <img src="logo/Aplicaciones-de-galerias-de-fotos.jpg" alt="Galeria" width="100%" height="150px">
+                            <img src="logo/Aplicaciones-de-galerias-de-fotos.jpg" alt="Galeria" width="100%"
+                                height="150px">
                         </div>
                         <p>Aplicación móvil hecha con React Native que permite registrarse, ver y tomar fotografias</p>
                         <div class="tecnologias">
@@ -252,16 +264,17 @@
                                 <i class="fab fa-github"></i>
                             </a>
                         </div>
-                    </div>   
+                    </div>
                     <!-- Tarjeta Proyecto 3 -->
                     <div class="tarjeta-proyecto">
                         <h4>Sistema de Gestión de Clínica</h4>
                         <div class="imagen-proyecto">
-                            <img src="logo/Tecnology.jpg" alt=" Sistema de Gestión de Clínica Web" width="100%" height="150px">
+                            <img src="logo/Tecnology.jpg" alt=" Sistema de Gestión de Clínica Web" width="100%"
+                                height="150px">
                         </div>
-                        <p>Creacion de una API REST con autenticación JWT en Java para la administración 
-                            de clínicas. Usé Bootstrap y una API 
-                            REST para una interfaz atractiva y una gestión 
+                        <p>Creacion de una API REST con autenticación JWT en Java para la administración
+                            de clínicas. Usé Bootstrap y una API
+                            REST para una interfaz atractiva y una gestión
                             eficiente</p>
                         <div class="tecnologias">
                             <img src="habilidades/java.png" alt="Java" width="30" height="30">
@@ -273,16 +286,17 @@
                         <div class="github-link">
                             <a href="https://github.com/Meyly-SK/ApiClinica" target="_blank">
                                 <i class="fab fa-github"></i>
-                            </a>                                          
-                        </div>                             
+                            </a>
+                        </div>
                     </div>
+                    <!-- Tarjeta Proyecto 4 -->
                     <div class="tarjeta-proyecto">
                         <h4>API con autenticación</h4>
                         <div class="imagen-proyecto">
                             <img src="logo/jwtlogo.jpg" alt="API REST con JWT" width="100%" height="150px">
                         </div>
-                        <p>Desarrollo de una API que cuenta con autenticación con JWT, hecho en C# y .NET con el uso de 
-                           Entity Framework para hacer las consultas a SQLSERVER </p>
+                        <p>Desarrollo de una API que cuenta con autenticación con JWT, hecho en C# y .NET con el uso de
+                            Entity Framework para hacer las consultas a SQLSERVER </p>
                         <div class="tecnologias">
                             <img src="habilidades/c-sharp.png" alt="c-sharp" width="30" height="30">
                             <img src="habilidades/NET_core.png" alt="c-sharp" width="30" height="30">
@@ -295,7 +309,31 @@
                                 <i class="fab fa-github"></i>
                             </a>
                         </div>
-                    </div>           
+                    </div>
+                    <!-- Tarjeta Proyecto 5 -->
+                    <div class="tarjeta-proyecto">
+                        <h4>Sistema de Pagos con Braintree</h4>
+                        <div class="imagen-proyecto">
+                            <img src="logo/jwtlogo.jpg" alt="API REST con JWT" width="100%" height="150px">
+                        </div>
+                        <p>Desarrollo de un servicio web utilizando Spring Boot como framework backend, que integra Braintree como pasarela de pago. Es consumido por una aplicación frontend desarrollada en Angular, que facilita la introducción de datos de tarjeta de crédito y la realización de pagos.</p>
+                        <div class="tecnologias">
+                            <img src="habilidades/java.png" alt="Java" width="30" height="30">
+                            <img src="habilidades/spring_boot.png" alt="spring_boot" width="30" height="30">
+                            <img src="habilidades/angular.png" alt="angular" width="30" height="30">
+                            <img src="habilidades/html-5.png" alt="html" width="30" height="30">
+                            <img src="habilidades/css.png" alt="css" width="30" height="30">
+                        </div>
+                        <div class="github-link">
+                            <a href="https://github.com/Meyly-SK/ApiPasarela" target="_blank">
+                                <i class="fab fa-github"></i> 
+                            </a>
+                            <span> | </span>
+                            <a href="https://github.com/Meyly-SK/FrontPasarela" target="_blank">
+                                <i class="fab fa-github"></i> 
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -304,7 +342,7 @@
     <section id="experiencias" class="experiencias">
         <div class="contenido">
             <h2>Experiencia Laboral</h2>
-    
+
             <!-- Tarjeta de Microdata -->
             <div class="tarjeta-experiencia">
                 <div class="tarjeta-header">
@@ -313,13 +351,16 @@
                 </div>
                 <div class="tarjeta-body">
                     <ul>
-                        <li>Desarrollé una aplicación móvil en Kotlin para una clínica odontológica, mejorando la accesibilidad para personas sordas.</li>
-                        <li>Optimizé una plataforma web para una empresa portuaria utilizando Node.js, Angular y AWS, mejorando la eficiencia y escalabilidad.</li>
-                        <li>Colaboré con equipos multidisciplinarios para asegurar la integración fluida entre frontend y backend.</li>
+                        <li>Desarrollé una aplicación móvil en Kotlin para una clínica odontológica, mejorando la
+                            accesibilidad para personas sordas.</li>
+                        <li>Optimizé una plataforma web para una empresa portuaria utilizando Node.js, Angular y AWS,
+                            mejorando la eficiencia y escalabilidad.</li>
+                        <li>Colaboré con equipos multidisciplinarios para asegurar la integración fluida entre frontend
+                            y backend.</li>
                     </ul>
                 </div>
             </div>
-    
+
             <!-- Tarjeta de Sosnet -->
             <div class="tarjeta-experiencia">
                 <div class="tarjeta-header">
@@ -328,9 +369,12 @@
                 </div>
                 <div class="tarjeta-body">
                     <ul>
-                        <li>Modernicé aplicaciones de escritorio migrándolas a plataformas web utilizando Java con Spring Boot y C# con .NET para clínicas.</li>
-                        <li>Optimizé flujos de trabajo médicos integrando nuevas tecnologías y mejores prácticas de desarrollo.</li>
-                        <li>Contribuí al diseño e implementación de interfaces y backend, mejorando la accesibilidad y experiencia del usuario final.</li>
+                        <li>Modernicé aplicaciones de escritorio migrándolas a plataformas web utilizando Java con
+                            Spring Boot y C# con .NET para clínicas.</li>
+                        <li>Optimizé flujos de trabajo médicos integrando nuevas tecnologías y mejores prácticas de
+                            desarrollo.</li>
+                        <li>Contribuí al diseño e implementación de interfaces y backend, mejorando la accesibilidad y
+                            experiencia del usuario final.</li>
                     </ul>
                 </div>
             </div>
@@ -369,4 +413,5 @@
     </footer>
     <script src="script.js"></script>
 </body>
+
 </html>
